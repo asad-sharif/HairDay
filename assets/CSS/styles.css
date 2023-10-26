@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    background-color: #F1E0D2;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 4rem;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header .brand-logo {
+    width: 10rem;
+    margin-bottom: 0.5rem;
+}
+
+.brand-logo img {
+    width: 100%;
+}
+
+.header ul {
+    display: flex;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #D0604C;
+    /* Change this to the desired color */
+    transition: width 0.3s ease;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+.ann-container {
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("../images/announcement-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 2rem 5%;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.ann-content {
+    width: 65%;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    gap: 1.5rem;
+}
+
+.cards-wrapper .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    border: 1px solid #D0604C;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.cards-wrapper .card:hover {
+    transform: scale(1.05) rotate(2deg);
+    transition: transform 0.3s ease;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    border-top: 1px solid #D0604C;
+    margin-top: 2rem;
+}
+
+.footer-wrapper .brand-logo {
+    width: 6rem;
+}

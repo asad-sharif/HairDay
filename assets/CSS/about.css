@@ -1,0 +1,14 @@
+.about-container {
+    padding: 0 25%;
+}
+.about-container div{
+    margin: 3rem 0;
+}
+p {
+    color: #444;
+    font-style: italic;
+
+}
+h2{
+    margin: 0;
+}
